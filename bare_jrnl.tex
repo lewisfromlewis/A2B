@@ -413,30 +413,30 @@
 
 
 \section{Background}
-\IEEEPARstart{N}{umerous} immune signaling mechanisms have been hypothesised to cause delirium[refs]. Alpha2 adrenoreceptor agonism modulates some of these immune signals, as detected in vitro by transcriptomics of quiescent[ref] and activated[ref] cells, cytokine measurements[ref] and assays of cellular function[ref]. in vivo data from humans under immune activation are not available.
-If, as suggested by the background evidence supporting the A2B trial, alpha2-adrenoreceptor agonists (a2aa) modulate the immune processes that lead to delirium, then the A2B trial constitutes a unique opportunity to infer a causative role for specific mediators in the pathogenesis of delirium.
+\IEEEPARstart{N}{umerous} immune signaling mechanisms have been hypothesised to cause delirium \cite{Schroder17042012}. $\alpha_2$ adrenoceptor agonism modulates some of these immune signals, as detected in vitro by transcriptomics of quiescent[ref] and activated[ref] cells, cytokine measurements[ref] and assays of cellular function[ref]. in vivo data from humans under immune activation are not available.
+If, as suggested by the background evidence supporting the A2B trial, $\alpha_2$-adrenoceptor agonists modulate the immune processes that lead to delirium, then the A2B trial constitutes a unique opportunity to infer a causative role for specific mediators in the pathogenesis of delirium.
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
 
+
 \section{Hypothesis}
-Modifiable immune signals in peripheral blood cause delirium: 
-\subsection{Inflammatory signals are modified by alpha agonism and associated with}
+Modifiable immune signals in peripheral blood cause delirium.  Specifically:
+\subsection{Inflammatory signals are modified by $\alpha_2$ agonism and associated with}
 \subsubsection{reduction in delirium or}
 \subsubsection{reduction in duration of mechanical ventilation}
 
 \section{Study design}
 \subsection{Generate hypothesis}
-We will systematically review published studies of (a) delirium and (b) immune effects of a2aa on gene expression and protein production and release in humans and mice. We will perform a short series of in vitro experiments to provide additional gene expression data from dex and clonidine-treated immune cells from circulating populations from 3 volunteers (neutrophils, monocytes, T-lymphocytes, B-lymphocytes) under quiescent and stimulated (LPS) conditions at therapeutically-relevant doses. In this phase gene expression will be assayed using CAGE to provide the maximum regulatory signaling information.
+We will systematically review published studies of (a) delirium and (b) immune effects of $\alpha_2$ agonists on gene expression and protein production and release in humans and mice. We will perform a short series of in vitro experiments to provide additional gene expression data from dex and clonidine-treated immune cells from circulating populations from 3 volunteers (neutrophils, monocytes, T-lymphocytes, B-lymphocytes) under quiescent and stimulated (LPS) conditions at therapeutically-relevant doses. In this phase gene expression will be assayed using CAGE to provide the maximum regulatory signaling information.
 Signals will be systematically collapsed onto human gene names using publicly available annotation and orthology data, as in our previous work \cite{}. We will use a circular crossvalidation algorithm to perform a data-driven evaluation and collation of existing data. Associated cytokines will be systematically identified using annotated pathway data (KEGG, Reactome, Wikipathways). We anticipate that this will yield a shortlist of 500-1000 genes and cytokines. From these we will select the subset of targets that have also been previously associated with delirium.
-\subsection{}
-We will obtain [samples] from all patients in the A2B study in participating units(n: control = 579, dexmedetomidine = 579, clonidine = 579). Samples will be assayed by [assays] in the subgroup of patients with both (a) successful adherence to protocol and (b) evidence of delirium and (c) evidence of systemic inflammation. In order to detect the biological effect of treatment, samples will be obtained 48-72h after beginning treatment (see trial protocol).
-For each gene or cytokine in the shortlist of hypothesised a2aa-responsive causative factors in delirium, we will quantify evidence for causality by combining (a) statistical evidence for a difference between treatment and control groups and (b) statistical evidence for an association with outcome. After correction for multiple comparisons we will identify causative factors in delirium.
+
+\subsection{Detect biological effect and compare to hypothesis using training and test set}
+In order to detect the biological effect of treatment we will obtain samples at 48-72h after beginning of treatment from all consenting patients in the A2B study (see trial protocol). In the subgroup of patients with successful adherence to protocol in whom there was also evidence of both delirium and sepsis, assays will be performed.
+For each gene or cytokine in the shortlist of hypothesised $\alpha_2$ agonist-responsive causative factors in delirium, we will quantify evidence for causality by combining (a) statistical evidence for a difference between treatment and control groups and (b) statistical evidence for an association with outcome. After correction for multiple comparisons we will identify causative factors in delirium.
 
 \subsection{Training-test hypothesis}
-\subsubsection{decompose transcriptome/cytokines to unique profiles}
-\subsubsection{detect a2aa-responsive delirium-associated factors in training set}
-\subsubsection{test significant associations in test set.}
+We will select a training set of 70\% of transcriptome profiles and decompose these transcriptomes to unique profiles. Within those profiles we will detect $\alpha_2$ agonist-responsive delirium-associated factors.  We will test significant associations in the remainder as a test set.
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -571,20 +571,20 @@ For each gene or cytokine in the shortlist of hypothesised a2aa-responsive causa
 % http://mirror.ctan.org/biblio/bibtex/contrib/doc/
 % The IEEEtran BibTeX style support page is at:
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
+\bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
+\bibliography{A2B}
 %
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+%\begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+%\bibitem{A2B:}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-\end{thebibliography}
+%\end{thebibliography}
 
 % biography section
 % 
