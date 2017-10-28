@@ -347,7 +347,7 @@
 
 
 % correct bad hyphenation here
-%\hyphenation{op-tical net-works semi-conduc-tor}
+% \hyphenation{op-tical net-works semi-conduc-tor}
 
 
 \begin{document}
@@ -358,7 +358,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Identification of causative factors in aetiology of delirium.}
+\title{Identification of causative factors in delirium.}
 %
 %
 % author names and IEEE memberships
@@ -387,14 +387,14 @@
 
 % If you want to put a publisher's ID mark on the page you can do it like
 % this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+% \IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
 % Remember, if you use this you must call \IEEEpubidadjcol in the second
 % column for its text to clear the IEEEpubid mark.
 
 
 
 % use for special paper notices
-%\IEEEspecialpapernotice{(Invited Paper)}
+% \IEEEspecialpapernotice{(Invited Paper)}
 
 
 % make the title area
@@ -408,13 +408,13 @@
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
+% \IEEEpeerreviewmaketitle
 
 
 
 \section{Background}
-\IEEEPARstart{N}{umerous} immune signaling mechanisms have been hypothesised to cause delirium \cite{jacob_septic_2011}. $\alpha_2$ adrenoceptor agonism modulates some of these immune signals, as detected in vitro by transcriptomics of quiescent[ref] and activated[ref] cells, cytokine measurements[ref] and assays of cellular function[ref]. in vivo data from humans under immune activation are not available.
-If, as suggested by the background evidence supporting the A2B trial, $\alpha_2$-adrenoceptor agonists modulate the immune processes that lead to delirium, then the A2B trial constitutes a unique opportunity to infer a causative role for specific mediators in the pathogenesis of delirium.
+\IEEEPARstart{N}{umerous} immune signaling mechanisms have been hypothesised to cause delirium \cite{jacob_septic_2011}. $\alpha_2$ adrenoceptor agonism modulates some of these immune signals, as detected \emph{in vitro} by transcriptomics of quiescent\cite{scanzano_adrenergic_2015} and activated \cite{schlachetzki_norepinephrine_2010} cells, cytokine measurements\cite{skrobik_factors_2013} and assays of cellular function \cite{gourdin_effect_2012}. Human data under immune activation \emph{in vivo} are not available.
+If, as suggested, $\alpha_2$-adrenoceptor agonists modulate the immune processes that lead to delirium, then the A2B trial constitutes a unique opportunity to infer a causative role for specific mediators in the pathogenesis of delirium.
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
@@ -428,8 +428,8 @@ Modifiable immune signals in peripheral blood cause delirium.  Specifically:
 
 \section{Study design}
 \subsection{Generate hypothesis}
-We will systematically review published studies of (a) delirium and (b) immune effects of $\alpha_2$ agonists on gene expression and protein production and release in humans and mice. We will perform a short series of in vitro experiments to provide additional gene expression data from dex and clonidine-treated immune cells from circulating populations from 3 volunteers (neutrophils, monocytes, T-lymphocytes, B-lymphocytes) under quiescent and stimulated (LPS) conditions at therapeutically-relevant doses. In this phase gene expression will be assayed using CAGE to provide the maximum regulatory signaling information.
-Signals will be systematically collapsed onto human gene names using publicly available annotation and orthology data, as in our previous work \cite{}. We will use a circular crossvalidation algorithm to perform a data-driven evaluation and collation of existing data. Associated cytokines will be systematically identified using annotated pathway data (KEGG, Reactome, Wikipathways). We anticipate that this will yield a shortlist of 500-1000 genes and cytokines. From these we will select the subset of targets that have also been previously associated with delirium.
+We will systematically review published studies of the effects on gene expression and protein production and release of (a) delirium and (b) $\alpha_2$ agonists in humans and mice. We will perform a short series of in vitro experiments to provide additional gene expression data from circulating immune cells treated with therapeutically-relevant doses of $\alpha_2$ agonist. Gene expression in immune cells (neutrophils, monocytes, T-lymphocytes, B-lymphocytes) from 3 volunteers will be assayed using CAGE \cite{fantom5_2014} under quiescent and stimulated (LPS) conditions to provide the maximum regulatory signaling information.
+Signals will be systematically collapsed onto human gene names using publicly available annotation and orthology data, as in our previous work \cite{Schroder17042012}. We will use a circular crossvalidation algorithm to perform a data-driven evaluation and collation of existing data. Associated cytokines will be systematically identified using annotated pathway data (KEGG, Reactome, Wikipathways). We anticipate that this will yield a shortlist of 500-1000 genes and cytokines. From these we will select the subset of targets that have also been previously associated with delirium.
 
 \subsection{Detect biological effect and compare to hypothesis using training and test set}
 In order to detect the biological effect of treatment we will obtain samples at 48-72h after beginning of treatment from all consenting patients in the A2B study (see trial protocol). In the subgroup of patients with successful adherence to protocol in whom there was also evidence of both delirium and sepsis, assays will be performed.
@@ -516,7 +516,7 @@ We will select a training set of 70\% of transcriptome profiles and decompose th
 %\hline
 %One & Two\\
 %\hline
-%Three & Four\\
+%Three \& Four\\
 %\hline
 %\end{tabular}
 %\end{table}
