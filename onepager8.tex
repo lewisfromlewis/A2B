@@ -1,0 +1,123 @@
+\documentclass[a4paper,11pt,onecolumn]{IEEEtran}
+%\documentclass[a4paper,11pt]{article}
+%===========================
+\newcommand{\version}{4.0}
+\newcommand{\modified}{October 27th, 2017}
+%===========================
+\newif\ifshowcomments
+\showcommentsfalse
+%\showcommentstrue
+%---------
+\usepackage{array} %allows you to define two settings for table columns
+\usepackage{bold-extra} % allows bold and textsc together
+\usepackage{multirow} % cell spans multiple rows of table
+\usepackage{amsmath}
+\usepackage{amssymb} % check box
+\usepackage{ifthen}
+\usepackage{calculator}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xspace} % space at end, unless followed by punctuation mark
+\usepackage{xstring} %case switcher, string tools
+\usepackage{tabularx}
+%---------
+%\pagestyle{fancy}
+%---------
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=16mm,
+ right=16mm,
+ top=10mm,
+ bottom=21mm,
+ }
+
+%formatting
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{0.2em} % spacing after paragraphs
+
+\usepackage{mathptmx} % compact font 
+
+% if using article format, these are helpful for making the title compact
+\newcommand{\subparagraph}{}
+\usepackage{titlesec} % This package lets you control the spacing around your titles and subtitles like this:
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}. 
+%\titlespacing*{hcommandi}{hlefti}{hbefore-sepi}{hafter-sepi}[hright-sepi]
+\titlespacing\section{0pt}{4pt plus 1pt minus 2pt}{2pt plus 1pt minus 2pt}
+\titlespacing\subsection{0pt}{8pt plus 2pt minus 2pt}{2pt plus 2pt minus 2pt}
+
+\usepackage{xcolor}
+\usepackage{hyperref} %#0p#
+\definecolor{linkcolor}{rgb}{0.05, 0.13, 0.53} %#0p#
+\hypersetup{
+	colorlinks = true,
+	breaklinks = true,
+	urlcolor = linkcolor,
+	linkcolor = linkcolor,
+	citecolor = linkcolor,
+}
+
+\graphicspath{ {./} }  %NB path must end with /
+
+%-------------
+\usepackage[backend=biber, style=nature]{biblatex}
+%\bibliography{A2B.bib}
+\bibliography{/Users/jkb/Dropbox/2_proposals_and_publications/5_BIBLIOGRAPHY/liblatex_abbreviations.bib}
+\AtEveryBibitem{\clearfield{title}}
+\AtEveryBibitem{\clearfield{issn}}
+%-------------
+
+\newcommand{\ataa}{$\alpha_2$-adrenoceptor agonist\xspace}
+\newcommand{\ataas}{$\alpha_2$-adrenoceptor agonists\xspace}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+\pagenumbering{gobble} 
+
+\font\customfont=cmr12 at 17pt
+\title{{\customfont Identification of circulating causative factors in delirium.}\vspace{-3ex}}
+%\font\authorfont=cmr12 at 5pt
+\author{
+	\parbox{\linewidth}{\centering
+			\emph{
+			Baillie JK, Walsh TS, Campbell L, Shankar-Hari M, Singer M for the A2B investigators
+			}
+			\vspace{-7ex}
+	}
+}
+\date{}
+\maketitle
+
+\section*{Background}
+Delirium is a complex multifactorial clinical phenotype. We predict that detectable, modifiable immune signals in peripheral blood cause delirium in some patients\cite{teeling_systemic_2009}. Randomised experiments in humans - which are necessary to infer causation - have not been successfully conducted to identify these factors. In addition to direct sedative effects on the central nervous system, \ataas modulate a variety of immune signals \emph{in vivo}\cite{kim_effects_2014,qiao_sedation_2009}. The A2B trial will randomise patients to two different \ataas, dexmedetomidine or clonidine, or to usual care, and will fastidiously measure delirium daily. If \ataas modulate systemic immune processes that lead to delirium, then this study constitutes a unique opportunity to provide evidence supporting a causative role for specific mediators in the pathogenesis of delirium.\par
+
+\section*{Aims}
+\begin{enumerate}
+	\item{To systematically predict circulating inflammatory signals that are modified by (a) dexmedetomidine \emph{and} (b) clonidine, in the context of acute systemic inflammation.}
+	\item{To test whether these signals are (a) modified by both \ataas, \emph{and} (b) associated with a reduction in delirium scores, in humans during systemic inflammation.}
+\end{enumerate}
+We infer that any signal with these features is either a causative factor in delirium, or a marker for a causative process ocurring outside of the scope of our measurements (e.g. unmeasured mediators in blood, immune cells in solid organs, direct effects on the central nervous system).
+\section*{Study design}
+In order to generate a limited set of hypotheses, we will collate published studies of effects of \ataas on transcript and cytokine production in immune cells, and perform a short series of \emph{in vitro} experiments to provide additional gene expression data from \ataa-treated humans at therapeutically-relevant doses. In this phase, gene expression will be assayed using $5'$-end RNA sequencing (CAGE) to resolve regulatory signaling, as we have shown previously\cite{fantom5biblatex}. Signals will be systematically collapsed onto human gene names using publicly-available annotation and orthology data, as in our previous work \cite{schroder_conservation_2012}. We will use a novel circular crossvalidation algorithm to perform a data-driven meta-analysis of existing data. We anticipate that this will yield a shortlist of 20-50 genes and cytokines.\par
+In order to detect the biological effect of treatment we will obtain a single blood sample at 48-72h after beginning of treatment from all consenting patients in the A2B study (see trial protocol). In order to cost-effectively measure multiple transcripts arising from distinct genomic regions, RNA-seq and multiplex cytokine assays will be performed in a randomly selected subset of 300 patients, 100 from each assigned treatment group. For each gene or cytokine in that shortlist of hypothesised \ataa-responsive causative factors in delirium, we will quantify evidence for causality by combining (a) statistical evidence for a difference between treatment and control groups and (b) statistical evidence for an association with outcome after adjusting for other measured characteristics. After stringent correction for multiple comparisons we will identify mediators that may play a causative role in the pathogenesis of delirium. These factors may be biomarkers for other measured entities, which will be identifiable by applying the same criteria to the entire dataset. 
+\par
+
+\section*{Deliverables}
+We will determine whether causation can be inferred from circulating immune signals in the A2B trial. In addition, we will create, analyse and openly share a unique hypothesis-generating dataset, and establish a cost-effective open-access plasma and RNA biobank for future studies of antiflammatory and neuromodulatory effects of \ataas. \par
+
+\printbibliography
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
