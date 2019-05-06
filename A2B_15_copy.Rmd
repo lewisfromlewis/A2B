@@ -1,0 +1,42 @@
+---
+title: "A2B_onepager_v15_copy"
+author: "Lewis Campbell"
+date: "6 May 2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background 
+
+The A2B three-arm, parallel-group, open-label, randomized clinical trial will test whether either dexmedetomidine or clonidine are superior to usual care (propofol) as primary sedative agents in mechanically ventilated patients. However, $\alpha_2$-agonists are also known to have anti-inflammatory effects in animal models of critical illness, which may mediate any beneficial clinical effects in critically ill patients. Randomisation in trials provides a unique instrumental variable to evaluate the causal effects of inflammatory pathways on key outcomes in human critical illness. In the A2B trial, primary outcome is the clinically and economically important ‘time to successful extubation’. Inflammatory pathways are likely to alter patient relevant secondary outcomes, including delirium, mortality, and cognitive decline. A grant application is under way in Australia for a trial testing hypotheses generated in the SPICE III RCT.
+
+## Hypothesis 
+
+We hypothesise that clinically important effects are mediated through modification of systemic inflammation and other, yet-to-be-characterised, biological effects.
+
+## Aims 
+  1. Ennumerate candidate circulating inflammatory signals from published work and collaborators' efforts that are modified by both $\alpha_2$-agonists; and,
+  2. Test in the A2B trial and potentially the SPICE IV trial whether these signals are 
+- modified by both $\alpha_2$-agonists, and 
+- associated with a reduction in time to extubation, delirium, or mortality.
+
+## Study design 
+
+In order to inform a hypothesis-testing study in patients, we will collate published studies of effects of $\alpha_2$-agonists on transcript and cytokine production in immune cells from any species, and perform a short series of in vitro experiments in primary donor leukocytes exposed to $\alpha_2$-agonists at therapeutically-relevant doses. In this phase, gene expression will be assayed using 50-end RNA sequencing (CAGE) to resolve regulatory signalling, as shown previously. Signals will be systematically collapsed onto human gene names using publicly-available annotation and orthology data, as in previous work. We will use a crossvalidation algorithms to prioritise candidate mediators. We anticipate that this will yield a manageable shortlist of genes and cytokines.
+In order to detect the biological effect of treatment we will obtain blood samples at baseline, 48-72h after randomisation and at convalescence from a nested cohort of patients. In order to cost-effectively measure multiple transcripts arising from distinct genomic regions, RNA-seq and multiplex cytokine assays will be performed. For each gene or cytokine in that shortlist of hypothesised a2-agonist-responsive factors, we will quantify evidence for causality by combining 
+
+- statistical evidence for a difference between treatment and control groups and 
+- statistical evidence for an association with outcome after
+adjusting for other measured characteristics. 
+
+After stringent correction for multiple comparisons we will identify causative mediators for specific outcomes. Inflammatory signals identified in this analysis will either lie on the causal pathway between $\alpha_2$-agonists and key outcomes, or will be biomarkers (in this biological context) for causative processes occurring outside of the scope of our measurements (e.g. unmeasured mediators in blood, immune cells in solid organs, direct effects on the central nervous system). 
+
+## Deliverables 
+
+  1. Determine whether clinical differences between treatment groups are mediated by anti-inflammatory, rather than sedative, effects of $\alpha_2$-agonists 
+  2. Identify circulating inflammatory signals that cause, or are markers for signals that cause, specific clinical outcomes.
+  3. Create, analyse and openly share a unique and analytically-tractable dataset.
+  4. Establish a cost-effective, open-access plasma and RNA biobank for future studies of antiflammatory and neuromodulatory effects of $\alpha_2$-agonists.
